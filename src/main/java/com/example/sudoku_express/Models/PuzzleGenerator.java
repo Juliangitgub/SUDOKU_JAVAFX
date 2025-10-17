@@ -6,6 +6,7 @@ import java.util.Random;
  * Esta clase se encargara de generar el tablero para nuestro sudoku
  * */
 public class PuzzleGenerator {
+    public Validator validator =new Validator();
     private int [][] board;
     private boolean[][] fixed;
     private final Random random = new Random();
@@ -32,26 +33,7 @@ public class PuzzleGenerator {
     public int[][] getPuzzle(){return this.board;}
     public boolean[][] getBoolPuzzle(){return this.fixed;}
 
-    private boolean isValidPlacement(int row, int col, int num) {
-        // Validar fila y columna
-        for (int i = 0; i < 6; i++) {
-            if (board[row][i] == num || board[i][col] == num) {
-                return false;
-            }
-        }
 
-        // Validar bloque 2x3
-        int startRow = (row / SUB_ROWS) * SUB_ROWS;
-        int startCol = (col / SUB_COLS) * SUB_COLS;
-        for (int r = startRow; r < startRow + SUB_ROWS; r++) {
-            for (int c = startCol; c < startCol + SUB_COLS; c++) {
-                if (board[r][c] == num) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
     public void Generate(){
         // Recorre los 6 bloques (0 a 5)
         for (int block = 0; block < SIZE; block++) {
@@ -71,7 +53,7 @@ public class PuzzleGenerator {
                 }
 
                 int num = 1 + random.nextInt(SIZE);
-                if (isValidPlacement(row, col, num)) {
+                if (validator.isValidPlacement(row, col, num,board,SUB_ROWS,SUB_COLS)) {
                     board[row][col] = num;
                     fixed[row][col] = true;
                     placed++;
