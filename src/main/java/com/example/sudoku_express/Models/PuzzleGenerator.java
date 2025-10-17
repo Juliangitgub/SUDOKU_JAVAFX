@@ -34,40 +34,43 @@ public class PuzzleGenerator {
     public boolean[][] getBoolPuzzle(){return this.fixed;}
 
 
-    public void Generate(){
-        // Recorre los 6 bloques (0 a 5)
-        for (int block = 0; block < SIZE; block++) {
-            int startRow = (block / 3) * 2;
-            int startCol = (block % 3) * 3;
+    public void Generate() {
+        for (int blockRow = 0; blockRow < SIZE / SUB_ROWS; blockRow++) {
+            for (int blockCol = 0; blockCol < SIZE / SUB_COLS; blockCol++) {
 
-            int placed = 0;
-            int attempts = 0;
+                int startRow = blockRow * SUB_ROWS;
+                int startCol = blockCol * SUB_COLS;
 
-            // Rellenar 2 números válidos por bloque
-            while (placed < 2 && attempts < 30) {
-                int row = startRow + random.nextInt(SUB_ROWS);
-                int col = startCol + random.nextInt(SUB_COLS);
-                if (board[row][col] != 0) {
+                int placed = 0;
+                int attempts = 0;
+
+                while (placed < 2 && attempts < 30) {
+                    int row = startRow + random.nextInt(SUB_ROWS);
+                    int col = startCol + random.nextInt(SUB_COLS);
+
+                    if (board[row][col] != 0) {
+                        attempts++;
+                        continue;
+                    }
+
+                    int num = 1 + random.nextInt(SIZE);
+                    if (validator.isValidPlacement(row, col, num,board,2,3)) {
+                        board[row][col] = num;
+                        fixed[row][col] = true;
+                        placed++;
+                    }
                     attempts++;
-                    continue; // ya ocupada
                 }
 
-                int num = 1 + random.nextInt(SIZE);
-                if (validator.isValidPlacement(row, col, num,board,SUB_ROWS,SUB_COLS)) {
-                    board[row][col] = num;
-                    fixed[row][col] = true;
-                    placed++;
+                if (placed < 2) {
+                    cleanBoard();
+                    blockRow = -1; // reinicia ambos bucles
+                    break;
                 }
-                attempts++;
-            }
-
-            // Si no se logró llenar bien el bloque, reiniciar
-            if (placed < 2) {
-                cleanBoard();
-                block = -1; // volver al primer bloque
             }
         }
     }
+
     public void resetPuzzle() {
         Generate(); // Reutiliza la lógica de generación
     }
