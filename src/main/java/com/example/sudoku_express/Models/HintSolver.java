@@ -1,59 +1,45 @@
 package com.example.sudoku_express.Models;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 /**
- * Solver de pista única: sugiere una sola celda válida
- * sin resolver completamente el tablero.
+ * HintSolver genera pistas basadas en la solución real del tablero.
+ * Compatible con el métoo generateHint(board, fixed) usado en SudokuController.
  */
 public class HintSolver {
 
-    private static final int SIZE = 6;
-    private final Validator validator = new Validator();
+    private final Random random = new Random();
 
     /**
-     * Genera una pista sugerida (sin modificar el tablero).
+     * Genera una pista válida para una celda vacía.
+     * Usa la solución completa almacenada en Board.
      *
-     * @param board tablero actual (6x6)
-     * @param fixed matriz booleana con las celdas fijas
-     * @return Hint con fila, columna y valor sugerido, o null si no hay pista
+     * @param current tablero visible (con ceros)
+     * @param fixed matriz de celdas fijas
+     * @return una Hint (row, col, value) o null si no hay celdas vacías
      */
-    public Hint generateHint(int[][] board, boolean[][] fixed) {
-        int vacias = contarVacias(board);
+    public Hint generateHint(int[][] current, boolean[][] fixed) {
+        Board board = Board.getInstance();
+        int[][] solution = board.getSolution();
 
-        // Evita resolver el tablero si solo queda una celda vacía
-        if (vacias <= 1) {
-            return null;
-        }
+        if (solution == null) return null;
 
-        for (int row = 0; row < SIZE; row++) {
-            for (int col = 0; col < SIZE; col++) {
-                // Solo actuar sobre celdas vacías y no fijas
-                if (board[row][col] == 0 && !fixed[row][col]) {
+        List<Hint> available = new ArrayList<>();
 
-                    for (int num = 1; num <= SIZE; num++) {
-                        if (validator.isValidPlacement(row, col,num,board,2,3)) {
-                            // Retornar la pista sin modificar el tablero
-                            return new Hint(row, col, num);
-                        }
-                    }
+        // Buscar todas las celdas vacías editables
+        for (int r = 0; r < current.length; r++) {
+            for (int c = 0; c < current[r].length; c++) {
+                if (!fixed[r][c] && current[r][c] == 0) {
+                    available.add(new Hint(r, c, solution[r][c]));
                 }
             }
         }
 
-        return null; // No se encontró pista válida
-    }
+        if (available.isEmpty()) return null;
 
-    /**
-     * Cuenta cuántas celdas vacías hay en el tablero.
-     */
-    private int contarVacias(int[][] board) {
-        int contador = 0;
-        for (int i = 0; i < SIZE; i++) {
-            for (int j = 0; j < SIZE; j++) {
-                if (board[i][j] == 0) {
-                    contador++;
-                }
-            }
-        }
-        return contador;
+        // Seleccionar una celda aleatoria
+        return available.get(random.nextInt(available.size()));
     }
 }

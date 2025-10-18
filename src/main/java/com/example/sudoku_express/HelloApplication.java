@@ -13,6 +13,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Sudoku Express");
         stage.setScene(scene);
+        stage.setFullScreen(true);
         stage.show();
     }
 
