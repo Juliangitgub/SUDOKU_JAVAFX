@@ -216,7 +216,7 @@ public class SudokuController {
     private void applyHelpHint() {
         Hint hint = hintSolver.generateHint(board.getBoard(), board.getFixed());
         if (hint == null) {
-            alertBox.showWarningAlertBox("Ayuda", "No hay pistas disponibles.", "Sin pistas");
+            alertBox.showWarningAlertBox("ERROR", "No es Posible Solucionar Por Completo el Tablero Con Pistas", "Terminar Manualmente");
             return;
         }
 

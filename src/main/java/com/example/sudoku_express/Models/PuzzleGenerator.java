@@ -47,22 +47,6 @@ public class PuzzleGenerator {
     }
 
     // ==========================================================
-    //  MÉTODOS PRINCIPALES (usados por Board y Controller)
-    // ==========================================================
-
-    public int[][] getPuzzle() {
-        return puzzle;
-    }
-
-    public boolean[][] getBoolPuzzle() {
-        return boolPuzzle;
-    }
-
-    public int[][] getSolution() {
-        return solution;
-    }
-
-    // ==========================================================
     //  GENERADOR DE SOLUCIÓN COMPLETA (BACKTRACKING)
     // ==========================================================
 
@@ -160,13 +144,5 @@ public class PuzzleGenerator {
         return puzzle;
     }
 
-    /**
-     * Genera directamente un nuevo tablero Sudoku válido (solución incluida).
-     * Mantiene compatibilidad con versiones antiguas.
-     */
-    public int[][] generatePuzzle(int rows, int cols, int blockRows, int blockCols) {
-        int[][] full = generateFullSolution(rows, cols, blockRows, blockCols);
-        return generatePuzzleFromSolution(full, rows, cols, blockRows, blockCols);
-    }
 }
 

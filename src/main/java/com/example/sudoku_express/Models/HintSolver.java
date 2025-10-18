@@ -37,7 +37,7 @@ public class HintSolver {
             }
         }
 
-        if (available.isEmpty()) return null;
+        if (available.size()<=1) return null;
 
         // Seleccionar una celda aleatoria
         return available.get(random.nextInt(available.size()));
