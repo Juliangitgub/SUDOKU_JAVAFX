@@ -1,4 +1,20 @@
-{
+package com.example.sudoku_express.Controllers;
+
+import com.example.sudoku_express.Models.AlertBox;
+import com.example.sudoku_express.Models.Board;
+import com.example.sudoku_express.Models.Hint;
+import com.example.sudoku_express.Models.HintSolver;
+import com.example.sudoku_express.Models.Validator;
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.GridPane;
+
+public class SudokuController {
 
     @FXML private GridPane sudokuGrid;
     @FXML private Button restartButton;
@@ -237,7 +253,7 @@
             }
         }
 
-        //  Verificar filas, columnas y bloques
+        // Verificar filas, columnas y bloques
         for (int r = 0; r < 6; r++) {
             boolean[] fila = new boolean[7];
             boolean[] columna = new boolean[7];
@@ -268,7 +284,7 @@
             }
         }
 
-        // Si pasa todas las validaciones, mostrar mensaje de victoria
+        //  Si pasa todas las validaciones, mostrar mensaje de victoria
         Platform.runLater(() -> {
             alertBox.showAlertBox("🎉 ¡Felicidades!", "Has completado correctamente el Sudoku.", "Victoria");
         });
@@ -301,6 +317,5 @@
         return "-fx-background-color: rgba(0,200,255,0.14); -fx-border-color: #00bfff; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 5;";
     }
 }
-
 
 
