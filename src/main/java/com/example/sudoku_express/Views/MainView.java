@@ -18,7 +18,6 @@ import javafx.stage.Stage;
 public class MainView {
 
     /**
-     * Método invocado por MenuController para lanzar la vista del juego.
      * Carga SudokuView.fxml y la muestra en pantalla completa.
      *
      * @param stage Stage principal de la aplicación (obtenido desde el controlador del menú)
