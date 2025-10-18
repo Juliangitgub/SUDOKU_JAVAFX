@@ -1,21 +1,4 @@
-package com.example.sudoku_express.Controllers;
-
-import com.example.sudoku_express.Models.AlertBox;
-import com.example.sudoku_express.Models.Board;
-import com.example.sudoku_express.Models.Hint;
-import com.example.sudoku_express.Models.HintSolver;
-import com.example.sudoku_express.Models.Validator;
-import javafx.application.Platform;
-import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.GridPane;
-
-
-public class SudokuController {
+{
 
     @FXML private GridPane sudokuGrid;
     @FXML private Button restartButton;
@@ -31,6 +14,9 @@ public class SudokuController {
     private int selectedRow = -1;
     private int selectedCol = -1;
 
+    /**
+     * Inicializa el controlador: enlaza las celdas, carga el tablero y configura eventos.
+     */
     @FXML
     public void initialize() {
         linkCellsFromGrid();
@@ -39,6 +25,9 @@ public class SudokuController {
         configureButtons();
     }
 
+    /**
+     * Enlaza los TextField del GridPane con la matriz cells[row][col].
+     */
     private void linkCellsFromGrid() {
         sudokuGrid.getChildren().forEach(node -> {
             if (node instanceof TextField tf) {
@@ -53,6 +42,9 @@ public class SudokuController {
         });
     }
 
+    /**
+     * Carga el tablero del modelo a la vista.
+     */
     private void loadModelToView() {
         for (int r = 0; r < 6; r++) {
             for (int c = 0; c < 6; c++) {
@@ -76,7 +68,9 @@ public class SudokuController {
         }
     }
 
-    
+    /**
+     * Configura eventos de teclado y mouse para todas las celdas.
+     */
     private void configureCellEvents() {
         for (int r = 0; r < 6; r++) {
             for (int c = 0; c < 6; c++) {
@@ -105,12 +99,13 @@ public class SudokuController {
                     if (ch.matches("[1-6]")) {
                         int number = Integer.parseInt(ch);
 
+                        // Validación manual correcta que ignora la celda actual
                         boolean valid = true;
                         int[][] current = board.getBoard();
 
                         for (int i = 0; i < 6 && valid; i++) {
-                            if (i != col && current[row][i] == number) valid = false; 
-                            if (i != row && current[i][col] == number) valid = false; 
+                            if (i != col && current[row][i] == number) valid = false; // fila
+                            if (i != row && current[i][col] == number) valid = false; // columna
                         }
 
                         int blockRow = (row / 2) * 2;
@@ -122,6 +117,7 @@ public class SudokuController {
                             }
                         }
 
+                        // Aplicar número al modelo y vista
                         board.cellMod(row, col, number);
                         tf.setText(String.valueOf(number));
                         tf.setStyle(valid ? styleValid() : styleInvalid());
@@ -133,7 +129,7 @@ public class SudokuController {
                     }
                 });
 
-                
+                // Teclas especiales (borrar)
                 tf.addEventHandler(KeyEvent.KEY_PRESSED, ev -> {
                     if (tf.isDisabled()) {
                         ev.consume();
@@ -151,13 +147,17 @@ public class SudokuController {
         }
     }
 
-    
+    /**
+     * Configura los botones RESTART y HELP.
+     */
     private void configureButtons() {
         restartButton.setOnAction(e -> confirmAndRestart());
         helpButton.setOnAction(e -> applyHelpHint());
     }
 
-    
+    /**
+     * Selecciona una celda y aplica estilo visual.
+     */
     private void selectCell(int row, int col) {
         TextField tf = cells[row][col];
         if (tf == null) return;
@@ -174,7 +174,9 @@ public class SudokuController {
         if (!tf.isDisabled()) tf.setStyle(styleSelected());
     }
 
-    
+    /**
+     * Reinicia el tablero con confirmación.
+     */
     private void confirmAndRestart() {
         Alert confirm = new Alert(Alert.AlertType.CONFIRMATION);
         confirm.setTitle("Confirmar reinicio");
@@ -192,7 +194,9 @@ public class SudokuController {
         }
     }
 
-    
+    /**
+     * Usa el HintSolver para mostrar una pista.
+     */
     private void applyHelpHint() {
         Hint hint = hintSolver.generateHint(board.getBoard(), board.getFixed());
         if (hint == null) {
@@ -213,19 +217,27 @@ public class SudokuController {
         Platform.runLater(this::checkWinCondition);
     }
 
-    
+    /**
+     * Verifica si el jugador ha completado el Sudoku correctamente.
+     * Si lo hizo, muestra una alerta de victoria.
+     */
+    /**
+     * Verifica si el jugador ha completado el Sudoku correctamente.
+     * Si lo hizo, muestra una alerta de victoria.
+     */
     private void checkWinCondition() {
         int[][] grid = board.getBoard();
 
-
+        // Verificar si hay celdas vacías
         for (int r = 0; r < 6; r++) {
             for (int c = 0; c < 6; c++) {
                 if (grid[r][c] == 0) {
-                    return; 
+                    return; // aún no está completo
                 }
             }
         }
 
+        //  Verificar filas, columnas y bloques
         for (int r = 0; r < 6; r++) {
             boolean[] fila = new boolean[7];
             boolean[] columna = new boolean[7];
@@ -234,27 +246,29 @@ public class SudokuController {
                 int numFila = grid[r][c];
                 int numCol = grid[c][r];
 
-                if (fila[numFila]) return; 
-                if (columna[numCol]) return;
+                if (fila[numFila]) return; // número repetido en fila
+                if (columna[numCol]) return; // número repetido en columna
 
                 fila[numFila] = true;
                 columna[numCol] = true;
             }
         }
 
+        //  Verificar bloques 2x3
         for (int blockRow = 0; blockRow < 6; blockRow += 2) {
             for (int blockCol = 0; blockCol < 6; blockCol += 3) {
                 boolean[] blockCheck = new boolean[7];
                 for (int r = blockRow; r < blockRow + 2; r++) {
                     for (int c = blockCol; c < blockCol + 3; c++) {
                         int num = grid[r][c];
-                        if (blockCheck[num]) return;
+                        if (blockCheck[num]) return; // número repetido en bloque
                         blockCheck[num] = true;
                     }
                 }
             }
         }
 
+        // Si pasa todas las validaciones, mostrar mensaje de victoria
         Platform.runLater(() -> {
             alertBox.showAlertBox("🎉 ¡Felicidades!", "Has completado correctamente el Sudoku.", "Victoria");
         });
