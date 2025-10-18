@@ -16,7 +16,7 @@ public class HintSolver {
      * @param fixed matriz booleana con las celdas fijas
      * @return Hint con fila, columna y valor sugerido, o null si no hay pista
      */
-    public Hint generarPista(int[][] board, boolean[][] fixed) {
+    public Hint generateHint(int[][] board, boolean[][] fixed) {
         int vacias = contarVacias(board);
 
         // Evita resolver el tablero si solo queda una celda vacía
