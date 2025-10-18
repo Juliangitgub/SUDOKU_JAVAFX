@@ -80,14 +80,14 @@
     </rowConstraints>
 
     <!-- Ejemplo de celda -->
-    <TextField fx:id="celda0_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="0" GridPane.rowIndex="0">
+    <TextField fx:id="celda0_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="0" GridPane.rowIndex="0">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
             <font>
                <Font size="20.0" />
             </font></TextField>
-         <TextField fx:id="celda0_1" alignment="CENTER" layoutX="52.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="1">
+         <TextField fx:id="celda0_1" alignment="CENTER" layoutX="52.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="1">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -95,7 +95,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda0_2" alignment="CENTER" layoutX="133.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="2">
+         <TextField fx:id="celda0_2" alignment="CENTER" layoutX="133.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="2">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -103,7 +103,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda0_3" alignment="CENTER" layoutX="32.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="3">
+         <TextField fx:id="celda0_3" alignment="CENTER" layoutX="32.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="3">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -111,7 +111,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda0_4" alignment="CENTER" layoutX="233.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="4">
+         <TextField fx:id="celda0_4" alignment="CENTER" layoutX="233.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="4">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -119,7 +119,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda0_5" alignment="CENTER" layoutX="233.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="5">
+         <TextField fx:id="celda0_5" alignment="CENTER" layoutX="233.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="5">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -127,7 +127,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda1_5" alignment="CENTER" layoutX="233.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="5" GridPane.rowIndex="1">
+         <TextField fx:id="celda1_5" alignment="CENTER" layoutX="233.0" layoutY="42.0" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="5" GridPane.rowIndex="1">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -135,7 +135,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda1_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <TextField fx:id="celda1_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="4" GridPane.rowIndex="1">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -143,7 +143,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda1_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <TextField fx:id="celda1_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -151,7 +151,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda1_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <TextField fx:id="celda1_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -159,7 +159,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda1_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <TextField fx:id="celda1_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -167,7 +167,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda1_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.rowIndex="1">
+         <TextField fx:id="celda1_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.rowIndex="1">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -175,7 +175,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda2_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.rowIndex="2">
+         <TextField fx:id="celda2_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.rowIndex="2">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -183,7 +183,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda2_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <TextField fx:id="celda2_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -191,7 +191,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda2_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <TextField fx:id="celda2_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -199,7 +199,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda2_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <TextField fx:id="celda2_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="3" GridPane.rowIndex="2">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -207,7 +207,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda2_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <TextField fx:id="celda2_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="4" GridPane.rowIndex="2">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -215,7 +215,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda2_5" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="5" GridPane.rowIndex="2">
+         <TextField fx:id="celda2_5" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="5" GridPane.rowIndex="2">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -223,7 +223,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda3_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.rowIndex="3">
+         <TextField fx:id="celda3_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -231,7 +231,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda3_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <TextField fx:id="celda3_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -239,7 +239,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda3_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <TextField fx:id="celda3_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -247,7 +247,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda3_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <TextField fx:id="celda3_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="3" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -255,7 +255,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda3_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="4" GridPane.rowIndex="3">
+         <TextField fx:id="celda3_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="4" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -263,7 +263,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda3_5" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="5" GridPane.rowIndex="3">
+         <TextField fx:id="celda3_5" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="5" GridPane.rowIndex="3">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -271,7 +271,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda4_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.rowIndex="4">
+         <TextField fx:id="celda4_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.rowIndex="4">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -279,7 +279,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda4_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <TextField fx:id="celda4_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -287,7 +287,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda4_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <TextField fx:id="celda4_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="2" GridPane.rowIndex="4">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -295,7 +295,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda4_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <TextField fx:id="celda4_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="3" GridPane.rowIndex="4">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -303,7 +303,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda4_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="4" GridPane.rowIndex="4">
+         <TextField fx:id="celda4_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="4" GridPane.rowIndex="4">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -311,7 +311,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda4_5" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="5" GridPane.rowIndex="4">
+         <TextField fx:id="celda4_5" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="5" GridPane.rowIndex="4">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -319,7 +319,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda5_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.rowIndex="5">
+         <TextField fx:id="celda5_0" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.rowIndex="5">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -327,7 +327,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda5_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <TextField fx:id="celda5_1" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -335,7 +335,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda5_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <TextField fx:id="celda5_2" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -343,7 +343,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda5_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <TextField fx:id="celda5_3" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="3" GridPane.rowIndex="5">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -351,7 +351,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda5_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="4" GridPane.rowIndex="5">
+         <TextField fx:id="celda5_4" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="4" GridPane.rowIndex="5">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
@@ -359,7 +359,7 @@
                <Font size="20.0" />
             </font>
          </TextField>
-         <TextField fx:id="celda5_5" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="1" GridPane.columnIndex="5" GridPane.rowIndex="5">
+         <TextField fx:id="celda5_5" alignment="CENTER" maxHeight="60" maxWidth="60" prefHeight="60" prefWidth="60" style="-fx-background-color: rgba(255,255,255,0.1);                       -fx-text-fill: white;                       -fx-font-size: 22px;                       -fx-font-weight: bold;                       -fx-border-color: #d2a679;                       -fx-border-radius: 4;                       -fx-background-radius: 4;" text="0" GridPane.columnIndex="5" GridPane.rowIndex="5">
             <GridPane.margin>
                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
             </GridPane.margin>
